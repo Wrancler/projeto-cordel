@@ -16,9 +16,27 @@
 }
 
 body {
-    background-color: darkgrey;
+    background-color: white;
     font-family: var(--font01);
 
+}
+
+header a, footer a {
+   text-decoration: none;
+   color: white;
+   font-weight: bold;
+}
+
+header a:hover, footer a:hover {
+   text-decoration: underline;
+}
+
+footer {
+   background-color: black;
+   color: white;
+   text-align: center;
+   padding: 10px;
+   font-size: 1em;
 }
 
 header {
@@ -32,19 +50,54 @@ header {
     font-size: 3em;
     font-family: var(--font02);
  }
+
+ section {
+   padding-top: 10vh;
+   padding-bottom: 10vh;
+   padding-left: 30px;
+   line-height: 2em;
+   font-family: var(--font03);
+   font-size: 3.5vw;
+   
+ }
+
  section p {
-    font-family: var(--font03);
-    font-weight: normal;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   font-weight: normal;
  }
   
  .normal {
     padding: 20px;
  }
 
- .imagem {
+ .imagem p {
     padding: 20px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.397);  
+    padding: 20px;
+    
  }
 
+
+
  #imagem01 {
-    background-image: url('imagens/');
+    height: 100vh;
+    background-image: url('imagens/background001.jpg');
+    background-size: cover;
+    color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right center;
+ 
+ }
+  
+ #imagem02 {
+   height: 100vh;
+   background-image: url('imagens/background002.jpg');
+   background-size: cover;
+   color: white;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: top center;
  }
